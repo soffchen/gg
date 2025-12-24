@@ -1,8 +1,9 @@
 module github.com/mzz2017/gg
 
-go 1.18
+go 1.24.0
 
 require (
+	anytls v0.0.11
 	github.com/1lann/promptui v0.0.0-20201231203810-3d80f6bc68f3
 	github.com/AlecAivazis/survey/v2 v2.3.2
 	github.com/fatih/structs v1.1.0
@@ -11,17 +12,18 @@ require (
 	github.com/mzz2017/softwind v0.0.0-20230212090240-561c250bc5c4
 	github.com/nadoo/glider v0.16.2
 	github.com/pelletier/go-toml v1.9.4
-	github.com/sirupsen/logrus v1.8.1
+	github.com/sirupsen/logrus v1.9.3
 	github.com/spf13/cobra v1.2.1
 	github.com/spf13/viper v1.9.0
 	github.com/v2rayA/shadowsocksR v1.0.4
 	golang.org/x/net v0.0.0-20220926192436-02166a98028e
-	golang.org/x/sys v0.0.0-20220728004956-3c1f35247d10
+	golang.org/x/sys v0.29.0
 	golang.org/x/tools v0.1.5
-	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b
+	gopkg.in/yaml.v3 v3.0.1
 )
 
 require (
+	github.com/chen3feng/stl4go v0.1.1 // indirect
 	github.com/chzyer/readline v0.0.0-20180603132655-2972be24d48e // indirect
 	github.com/dgryski/go-camellia v0.0.0-20191119043421-69a8a13fb23d // indirect
 	github.com/dgryski/go-idea v0.0.0-20170306091226-d2fb45a411fb // indirect
@@ -44,6 +46,7 @@ require (
 	github.com/modern-go/concurrent v0.0.0-20180228061459-e0a39a4cb421 // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/mzz2017/disk-bloom v1.0.1 // indirect
+	github.com/sagernet/sing v0.5.1 // indirect
 	github.com/seiflotfy/cuckoofilter v0.0.0-20201222105146-bc6005554a0c // indirect
 	github.com/spf13/afero v1.6.0 // indirect
 	github.com/spf13/cast v1.4.1 // indirect
@@ -64,6 +67,7 @@ require (
 replace (
 	//github.com/mzz2017/softwind => ../softwind
 
+	anytls => github.com/anytls/anytls-go v0.0.11
 	github.com/spf13/cobra => github.com/mzz2017/cobra v0.0.0-20211205075040-2b7f80d9e0b4
 	github.com/spf13/pflag => github.com/mzz2017/pflag v0.0.0-20211204030847-74e9419ee6b3
 )

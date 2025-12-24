@@ -7,6 +7,7 @@ import (
 	"os"
 	"time"
 
+	_ "github.com/mzz2017/gg/dialer/anytls"
 	_ "github.com/mzz2017/gg/dialer/http"
 	_ "github.com/mzz2017/gg/dialer/shadowsocks"
 	_ "github.com/mzz2017/gg/dialer/shadowsocksr"
